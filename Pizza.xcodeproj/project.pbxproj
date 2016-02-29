@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		131F95C01C8296B00078F291 /* ToppingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131F95BF1C8296B00078F291 /* ToppingsViewController.swift */; };
+		49366C751C84D85600CAA985 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49366C741C84D85600CAA985 /* ConfirmViewController.swift */; };
 		495175E51C81240800640007 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495175E41C81240800640007 /* AppDelegate.swift */; };
-		495175E71C81240800640007 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495175E61C81240800640007 /* ViewController.swift */; };
+		495175E71C81240800640007 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495175E61C81240800640007 /* MainViewController.swift */; };
 		495175EA1C81240800640007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495175E81C81240800640007 /* Main.storyboard */; };
 		495175EC1C81240800640007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495175EB1C81240800640007 /* Assets.xcassets */; };
 		495175EF1C81240800640007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495175ED1C81240800640007 /* LaunchScreen.storyboard */; };
+		495175F81C8130A600640007 /* SizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495175F71C8130A600640007 /* SizeViewController.swift */; };
+		495175FA1C81311500640007 /* MassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495175F91C81311500640007 /* MassViewController.swift */; };
+		495175FC1C81315300640007 /* CheeseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495175FB1C81315300640007 /* CheeseViewController.swift */; };
+		495175FF1C81323600640007 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495175FE1C81323600640007 /* Pizza.swift */; };
+		49AAFA371C82058E0094E4AF /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AAFA361C82058E0094E4AF /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		131F95BF1C8296B00078F291 /* ToppingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToppingsViewController.swift; sourceTree = "<group>"; };
+		49366C741C84D85600CAA985 /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		495175E11C81240800640007 /* Pizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495175E41C81240800640007 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		495175E61C81240800640007 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		495175E61C81240800640007 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Pizza/MainViewController.swift; sourceTree = "<group>"; };
 		495175E91C81240800640007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		495175EB1C81240800640007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		495175EE1C81240800640007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		495175F01C81240800640007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495175F71C8130A600640007 /* SizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeViewController.swift; sourceTree = "<group>"; };
+		495175F91C81311500640007 /* MassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MassViewController.swift; sourceTree = "<group>"; };
+		495175FB1C81315300640007 /* CheeseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheeseViewController.swift; sourceTree = "<group>"; };
+		495175FE1C81323600640007 /* Pizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+		49AAFA361C82058E0094E4AF /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +52,8 @@
 		495175D81C81240800640007 = {
 			isa = PBXGroup;
 			children = (
+				495175FD1C81321000640007 /* Models */,
+				495175F61C81301A00640007 /* Controllers */,
 				495175E31C81240800640007 /* Pizza */,
 				495175E21C81240800640007 /* Products */,
 			);
@@ -55,13 +71,34 @@
 			isa = PBXGroup;
 			children = (
 				495175E41C81240800640007 /* AppDelegate.swift */,
-				495175E61C81240800640007 /* ViewController.swift */,
 				495175E81C81240800640007 /* Main.storyboard */,
 				495175EB1C81240800640007 /* Assets.xcassets */,
 				495175ED1C81240800640007 /* LaunchScreen.storyboard */,
 				495175F01C81240800640007 /* Info.plist */,
 			);
 			path = Pizza;
+			sourceTree = "<group>";
+		};
+		495175F61C81301A00640007 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				495175E61C81240800640007 /* MainViewController.swift */,
+				495175F71C8130A600640007 /* SizeViewController.swift */,
+				495175F91C81311500640007 /* MassViewController.swift */,
+				495175FB1C81315300640007 /* CheeseViewController.swift */,
+				131F95BF1C8296B00078F291 /* ToppingsViewController.swift */,
+				49366C741C84D85600CAA985 /* ConfirmViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		495175FD1C81321000640007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				495175FE1C81323600640007 /* Pizza.swift */,
+				49AAFA361C82058E0094E4AF /* Data.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +133,7 @@
 				TargetAttributes = {
 					495175E01C81240800640007 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = L9B8JU68WF;
 					};
 				};
 			};
@@ -135,7 +173,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				495175E71C81240800640007 /* ViewController.swift in Sources */,
+				49366C751C84D85600CAA985 /* ConfirmViewController.swift in Sources */,
+				49AAFA371C82058E0094E4AF /* Data.swift in Sources */,
+				495175E71C81240800640007 /* MainViewController.swift in Sources */,
+				131F95C01C8296B00078F291 /* ToppingsViewController.swift in Sources */,
+				495175FC1C81315300640007 /* CheeseViewController.swift in Sources */,
+				495175FF1C81323600640007 /* Pizza.swift in Sources */,
+				495175F81C8130A600640007 /* SizeViewController.swift in Sources */,
+				495175FA1C81311500640007 /* MassViewController.swift in Sources */,
 				495175E51C81240800640007 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,10 +292,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Pizza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.sergioacosta.Pizza;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -258,10 +306,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Pizza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.sergioacosta.Pizza;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -284,6 +335,7 @@
 				495175F51C81240800640007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
