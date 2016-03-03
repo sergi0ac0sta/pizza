@@ -137,7 +137,7 @@
                 <controller identifier="pizzaWithToppings" id="71x-RZ-rJh" customClass="ConfirmInterfaceController" customModule="PizzaWatchOS_Extension">
                     <items>
                         <label width="1" alignment="left" hidden="YES" text="Debes elegir entre 1 y 5 ingredientes" numberOfLines="0" id="ORT-TV-5d4"/>
-                        <group width="1" alignment="left" layout="vertical" id="1uB-Wd-JVi">
+                        <group width="1" alignment="left" hidden="YES" layout="vertical" id="1uB-Wd-JVi">
                             <items>
                                 <label alignment="left" text="Confirma tu pizza" id="7W8-bv-ZYv"/>
                                 <label alignment="left" text="Tamaño:" id="rvv-Jr-wN8">
@@ -184,9 +184,15 @@
         <!--pizzaWithConfirmation-->
         <scene sceneID="7oU-f2-aNb">
             <objects>
-                <controller identifier="pizzaWithConfirmation" id="MHk-mg-J4f">
+                <controller identifier="pizzaWithConfirmation" id="MHk-mg-J4f" customClass="FinishInterfaceController" customModule="PizzaWatchOS_Extension">
                     <items>
                         <label width="1" alignment="left" text="Gracias, tu orden ha sido enviada a la cocina." numberOfLines="0" id="deK-Io-CrY"/>
+                        <button width="1" alignment="left" title="Terminar" id="cLu-8c-P9O">
+                            <color key="backgroundColor" red="0.054901960784313725" green="0.0" blue="0.51764705882352946" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="finishApp" destination="MHk-mg-J4f" id="pAj-xn-lcu"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
